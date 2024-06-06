@@ -29,5 +29,12 @@ namespace ApiTestingTool.Controllers
             })
             .ToArray();
         }
+
+        //message of Hello World
+        [HttpGet("HelloWorld", Name = "HelloWorld")]
+        public string helloWorld()
+        {
+            return "Hello World";
+        }
     }
 }
